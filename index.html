@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nude.js</title>
+    <style>
+        img {
+            width: 50%;
+            margin: 20px 0 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="01.jpg" id="img" />
+    <script src="nude.min.js"></script>
+    <script>
+        const img = document.getElementById('img')
+        nude.load(img)
+        nude.scan(result => {
+            console.log(result)
+        })
+    </script>
+</body>
+
+</html>
